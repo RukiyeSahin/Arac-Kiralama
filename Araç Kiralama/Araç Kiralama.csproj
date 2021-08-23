@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C12C3A59-49F1-4047-B472-6798D204F355}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Araç_Kiralama</RootNamespace>
+    <AssemblyName>Araç Kiralama</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Anasayfa.Designer.cs">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Arac_Kiralama.cs" />
+    <Compile Include="frmAracKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAracKayit.Designer.cs">
+      <DependentUpon>frmAracKayit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAracListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAracListele.Designer.cs">
+      <DependentUpon>frmAracListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMusteriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusteriEkle.Designer.cs">
+      <DependentUpon>frmMusteriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMusteriListele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMusteriListele.Designer.cs">
+      <DependentUpon>frmMusteriListele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSatis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSatis.Designer.cs">
+      <DependentUpon>frmSatis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSifremiUnuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSifremiUnuttum.Designer.cs">
+      <DependentUpon>frmSifremiUnuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSozlesme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSozlesme.Designer.cs">
+      <DependentUpon>frmSozlesme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Anasayfa.resx">
+      <DependentUpon>Anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAracKayit.resx">
+      <DependentUpon>frmAracKayit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAracListele.resx">
+      <DependentUpon>frmAracListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMusteriEkle.resx">
+      <DependentUpon>frmMusteriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMusteriListele.resx">
+      <DependentUpon>frmMusteriListele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSatis.resx">
+      <DependentUpon>frmSatis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSifremiUnuttum.resx">
+      <DependentUpon>frmSifremiUnuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSozlesme.resx">
+      <DependentUpon>frmSozlesme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c#.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c#2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bugatti-La-Voiture-Noire-02.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayşe2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\resim2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ayşe2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\togg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\togg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\togg11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c# 3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c# 3 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c# 3 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mercedes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mercedes1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\850x478-tum-zamanlarin-en-pahali-volvosunda-ultra-luks-ozellikler-1492068072314 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\togg %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jeep.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1ba3c03b51e1463d81b49099a39a233c0212201717052503764_0 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\amarok %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jaguar %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giris.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
